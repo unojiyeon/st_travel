@@ -6,3 +6,4 @@ koreanize-matplotlib
 squarify
 plotly
 requests
+setuptools
