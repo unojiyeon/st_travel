@@ -121,7 +121,7 @@ elif menu == "수익 전략 제안":
     col1, col2 = st.columns([1, 1])
     with col1:
         st.subheader("수익 효율성 지수 (Efficiency Index)")
-        fig = px.bar(merged, x='효율성 지수', y='시군구명', orientation='h', color='효율성 지수', color_continuous_scale='coolwarm')
+        fig = px.bar(merged, x='효율성 지수', y='시군구명', orientation='h', color='효율성 지수', color_continuous_scale='RdBu_r')
         fig.add_vline(x=1.0, line_dash="dash", line_color="red")
         st.plotly_chart(fig, use_container_width=True)
         
